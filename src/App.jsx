@@ -1,4 +1,4 @@
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css'
 import IntroductionComp from './components/introduction-comp/introduction-comp'
 
