@@ -36,7 +36,7 @@ export default function ProjectChart(){
 </div>
 
 
-<div className="flex">
+<div className="flex mt-[2rem]">
 <a className="font-bold text-indigo-700" href="https://github.com/sametorbuk?tab=repositories" 
 target="_blank" rel="noopener noreferrer">Github</a>
 </div>
