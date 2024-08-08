@@ -3,6 +3,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { useContext } from 'react';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 
 
@@ -10,6 +12,10 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
 export default function IntroductionComp(){
+
+const {isDarkMode}=useContext(ThemeContext)
+
+
     return(<>
     
     <section className="flex my-8 gap-[2rem] items-center ">
@@ -19,7 +25,7 @@ export default function IntroductionComp(){
 
 <h2>SAMET ORBUK</h2>
 
-<p className="text-6xl font-bold" >Creative Thinker Minimalizm Lover</p>
+<p className={`${isDarkMode ? "text-white" : ""} text-6xl font-bold`} >Creative Thinker Minimalizm Lover</p>
 
 <p className="text-[gray]" >Hi, I’m Almila. I’m a full-stack developer.
      If you are looking for a Developer who to craft

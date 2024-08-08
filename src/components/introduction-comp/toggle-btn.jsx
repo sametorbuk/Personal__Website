@@ -1,16 +1,16 @@
 import { useContext, useState } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
+
 const ToggleButton = () => {
 
-const {toggleTheme} = useContext(ThemeContext)
+const [toggled, setToggled] = useState(false);
 
-
-  const [toggled, setToggled] = useState(false);
+const {toggleTheme}=useContext(ThemeContext)
 
   const handleToggle = () => {
     setToggled(!toggled);
-    toggleTheme();
+     toggleTheme();
   };
 
   return (

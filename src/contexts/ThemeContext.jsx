@@ -12,11 +12,11 @@ const ThemeContextProvider =({children})=>{
 
 
  return(
-<ThemeContextProvider value={{isDarkMode , toggleTheme}}>
+<ThemeContext.Provider value={{isDarkMode , toggleTheme}}>
 
 {children}
 
-</ThemeContextProvider>
+</ThemeContext.Provider>
  )
 
 
