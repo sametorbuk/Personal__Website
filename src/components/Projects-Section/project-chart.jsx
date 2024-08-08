@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 
 
@@ -29,9 +30,15 @@ export default function ProjectChart(){
 <div className="flex gap-[0.6rem] mt-[1rem]">
 
 
-<button>react</button>
-<button>redux</button>
-<button>axios</button>
+<button className="btn">react</button>
+<button className="btn">redux</button>
+<button className="btn">axios</button>
+</div>
+
+
+<div className="flex">
+<a className="font-bold text-indigo-700" href="https://github.com/sametorbuk?tab=repositories" 
+target="_blank" rel="noopener noreferrer">Github</a>
 </div>
 
 

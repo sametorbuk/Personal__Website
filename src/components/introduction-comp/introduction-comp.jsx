@@ -29,9 +29,8 @@ export default function IntroductionComp(){
 <div className="flex gap-[0.8rem]" >
 
 <button className="flex items-center bg-indigo-900 text-white px-6 py-2.5 rounded-md">    Hire me</button>
-<button className="button"    > <FontAwesomeIcon icon={faGithub}/>    Github</button>
-<button className="flex gap-[0.3rem] items-center text-indigo-900 border border-solid
-border-indigo-900  px-6 py-2.5 rounded-md" >  <FontAwesomeIcon icon={faLinkedinIn} />   Linkedin</button>
+<button className="btn"    > <FontAwesomeIcon icon={faGithub}/>    Github</button>
+<button className="btn" >  <FontAwesomeIcon icon={faLinkedinIn} />   Linkedin</button>
 
 </div>
 
