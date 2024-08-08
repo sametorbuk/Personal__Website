@@ -8,21 +8,20 @@ export const introCompData = {username: "SAMET",
 
 
 
-export const skillsData = {
-    javaScript:{
+export const skillsData = [{
         skillName:"Java Script",
         explanation:"JavaScript, geliştiricilerin etkileşimli web sayfaları oluşturmak için kullandığı bir programlama dilidir."
     },
-    react:{
-        skillname:"React JS",
+  {
+        skillName:"React JS",
         explanation:"React kullanıcı arayüzü oluşturmaya yarayan açık kaynak kodlu bir javascript kütüphanesidir. Facebook önderliğinde bir geliştirici grubu tarafından geliştirilmekte olan React, Model-View-Controller prensibine uygun olarak oluşturulmuştur."
     },
 
-    nodeJs:{
-        skillname:"Node JS",
+   {
+        skillName:"Node JS",
         explanation:"Node.js, açık kaynaklı, genelde sunucu tarafında çalışan ve ağ bağlantılı uygulamalar için geliştirilmiş bir çalıştırma ortamıdır. Node.js uygulamaları genelde istemci tarafı betik dili olan JavaScript kullanılarak geliştirilir."
     }
-}
+]
 
 
 
@@ -38,23 +37,30 @@ export const profileData = {
 
 
 
-export const ProjectsData = [{
-
-
-
-
-
-},{
-
-
-
+export const projectsData = [{
+projectName: "Dashboard",
+img:"./src/images/wit-control-img-png",
+explanation:"It is a simple to use interface created especially for administrators and facilitates product management. It was created using React and various libraries. "
 
 
 
 },{
 
-  
+projectName:"Product Hunt",
+img:"./src/images/prodcut-hunt-website.png",
+explanation:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
+
+},{
+
+ projectName:"Journey",
+ img:"./src/images/journey-app.jpg" ,
+ explanation:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
     
-    
+
 
 }]
+
+
+
+
+export const initialData = [skillsData , profileData , projectsData , introCompData]

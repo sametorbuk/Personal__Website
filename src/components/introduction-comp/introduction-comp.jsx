@@ -3,19 +3,33 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
-
-
-
-
+import useAxios from '../../hooks/useAxios';
+import { initialData } from '../../data/data';
 
 
 export default function IntroductionComp(){
-
 const {isDarkMode}=useContext(ThemeContext)
 
+const {data , MakeRequest , METHODS }=useAxios({initialData});
 
+useEffect(()=>{
+
+MakeRequest({
+    method:METHODS.POST,
+    data: initialData
+})
+
+console.log(data)
+
+},[])
+
+
+const introductionCompData = data[3]
+console.log(introductionCompData)
+
+const {username , title , explanation , img , pathToGithub , pathToLinkedin} = introductionCompData
     return(<>
     
     <section className="flex my-8 gap-[2rem] items-center ">
@@ -23,25 +37,22 @@ const {isDarkMode}=useContext(ThemeContext)
 
 <div className="flex flex-col gap-[2rem] max-w-[35rem]">
 
-<h2>SAMET ORBUK</h2>
+<h2>{username}</h2>
 
-<p className={`${isDarkMode ? "text-white" : ""} text-6xl font-bold`} >Creative Thinker Minimalizm Lover</p>
+<p className={`${isDarkMode ? "text-white" : ""} text-6xl font-bold`} >{title}</p>
 
-<p className="text-[gray]" >Hi, I’m Almila. I’m a full-stack developer.
-     If you are looking for a Developer who to craft
-      solid and scalable frontend products
-     with great user experiences. Let’s shake hands with me.</p>
+<p className="text-[gray]" >{explanation}</p>
 
 <div className="flex gap-[0.8rem]" >
 
 <button className={` ${isDarkMode ? "btnDark" : " btn"}`}>    Hire me</button>
-<a target="_blank" href="https://github.com/sametorbuk?tab=repositories">  <button className={` ${isDarkMode ? "btnDark" : " btn"}`}> <FontAwesomeIcon icon={faGithub}/>Github</button></a> 
-<a target="_blank" href="https://www.linkedin.com/in/sametorbuk/"> <button className={` ${isDarkMode ? "btnDark" : " btn"}`} ><FontAwesomeIcon icon={faLinkedinIn} />Linkedin</button></a>
+<a target="_blank" href={pathToGithub}>  <button className={` ${isDarkMode ? "btnDark" : " btn"}`}> <FontAwesomeIcon icon={faGithub}/>Github</button></a> 
+<a target="_blank" href={pathToLinkedin}> <button className={` ${isDarkMode ? "btnDark" : " btn"}`} ><FontAwesomeIcon icon={faLinkedinIn} />Linkedin</button></a>
 
 </div>
 
 </div>
-<img  className="w-[25rem] h-[17rem] rounded-md" src="https://pbs.twimg.com/profile_images/1819068549341523968/-2bnjkC-_400x400.jpg" alt="" />
+<img  className="w-[25rem] h-[17rem] rounded-md" src={img} alt="" />
 
     </section>
     

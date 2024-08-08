@@ -5,7 +5,7 @@ import { useState } from "react";
 const METHODS = {
     PUT:"put",
     GET:"get",
-    POST:"POST",
+    POST:"post",
     DELETE:"delete"
 }
 
@@ -28,14 +28,14 @@ const instance = axios.create({
 
 
 
-  const MakeRequest = ({url,
+  const MakeRequest = ({url=null,
    method,
    data = null
  })=>{
 
   setLoading(true)
 
-  instance[method](url , data ? data : null)
+  instance[method](url ? url : null , data ? data : null)
   .then((response)=>{
     setData(response.data)
     setLoading(false)
