@@ -30,7 +30,7 @@ export default function Footer (){
    </div>
    
    
-   <div className="absolute flex justify-between gap-[2rem] right-[9rem] top-[133.5rem] ">
+   <div className="absolute flex justify-between gap-[2rem] right-[9rem] top-[132rem] ">
 
 <a className="font-bold" href="">Personal Blog</a>
 <a className="text-emerald-400 font-bold" target="_blank" href="https://github.com/sametorbuk?tab=repositories">Github</a>

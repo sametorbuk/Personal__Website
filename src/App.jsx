@@ -25,7 +25,7 @@ function Content() {
   const { isDarkMode } = useContext(ThemeContext);
 
   return (
-    <div className={`flex flex-col ${isDarkMode ? "bg-slate-700" : ""} px-[8rem] py-[3rem]`}>
+    <div className={`flex flex-col ${isDarkMode ? "bg-slate-700 text-white" : ""} px-[8rem] py-[3rem]`}>
       <Header />
       <IntroductionComp />
       <Skills />

@@ -5,9 +5,13 @@ const ThemeContextProvider =({children})=>{
 
  const [isDarkMode , setIsDarkMode]=useState(false)
 
+
+ const saveTheme = isDarkMode ? "DARK" : "LIGHT"
+localStorage.setItem("theme" , JSON.stringify(saveTheme))
    
  const toggleTheme =()=>{
     setIsDarkMode(!isDarkMode)
+    localStorage.setItem("theme" , JSON.stringify(saveTheme))
  }
 
 

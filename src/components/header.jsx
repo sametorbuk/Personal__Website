@@ -16,16 +16,16 @@ export default function Header(){
     <header className="flex items-end flex-col gap-[3.5rem]">
 <div className='flex gap-[2rem]'>
   <ToggleButton/>
-<button className={`${isDarkMode ? "text-white" : ""}`} >{`${isDarkMode ? "Light Mode " :"Dark Mode" }`}</button>
+<button>{`${isDarkMode ? "Light Mode " :"Dark Mode" }`}</button>
 <p>|</p>
-<button className={`${isDarkMode ? "text-white" : ""}`}>Türkçeye geç</button>
+<button >Türkçeye geç</button>
 
 </div>
 
 <div className='flex gap-[2rem]'>
-  <button className={`${isDarkMode ? "text-white" : ""}`} >Skill</button>
-  <button className={`${isDarkMode ? "text-white" : ""}`} >Skill</button>
-  <button className={`${isDarkMode ? "text-white" : ""}`} >Skill</button>
+  <button  >Skill</button>
+  <button  >Skill</button>
+  <button  >Skill</button>
 
 </div>
 

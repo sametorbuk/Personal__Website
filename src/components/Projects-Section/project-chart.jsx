@@ -1,7 +1,12 @@
+import { useContext } from "react"
+import { ThemeContext } from "../../contexts/ThemeContext"
 
 
 
 export default function ProjectChart(){
+ const {isDarkMode}=useContext(ThemeContext)
+
+
     return(<>
     
     
@@ -11,7 +16,7 @@ export default function ProjectChart(){
 
 
 
-            <p className="text-2xl font-bold text-indigo-800 mt-[1.5rem]"  >Profile</p>
+            <p className={`${isDarkMode ? "text-white" : ""}  text-2xl font-bold text-indigo-800 mt-[1.5rem]`}  >Profile</p>
 
 
            <p className="text-[gray]">A simple, customizable, minimal setup cookie plugin 
@@ -24,12 +29,12 @@ export default function ProjectChart(){
 <div className="flex gap-[0.6rem] mt-[1rem]">
 
 
-<button className="btn">react</button>
-<button className="btn">redux</button>
-<button className="btn">axios</button>
+<button className={` ${isDarkMode ? "btnDark" : " btn"}`}>react</button>
+<button className={` ${isDarkMode ? "btnDark" : " btn"}`}>redux</button>
+<button className={` ${isDarkMode ? "btnDark" : " btn"}`}>axios</button>
 </div>
 
-
+ 
 <div className="flex mt-[2rem]">
 <a className="font-bold text-indigo-700" href="https://github.com/sametorbuk?tab=repositories" 
 target="_blank" rel="noopener noreferrer">Github</a>

@@ -11,3 +11,9 @@
     @apply  flex gap-[0.3rem] items-center text-indigo-900 border border-solid
     border-indigo-900  px-6 py-2.5 rounded-md
 }
+
+
+.btnDark {
+    @apply  flex gap-[0.3rem] items-center text-white border border-solid
+    border-white  px-6 py-2.5 rounded-md
+}
