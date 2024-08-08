@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+
+button{
+    @apply: flex gap-[0.3rem] items-center text-indigo-900 border border-solid
+    border-indigo-900  px-6 py-2.5 rounded-md
+}

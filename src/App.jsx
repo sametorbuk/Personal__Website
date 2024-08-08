@@ -1,6 +1,12 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css'
-import IntroductionComp from './components/introduction-comp/introduction-comp'
+
+
+import Header from './components/header';
+import ProfileSection from './components/profile';
+import IntroductionComp from './components/introduction-comp/introduction-comp';
+import Skills from './components/skills/Skills.comp';
+import ProjectsSection from './components/Projects-Section/Projects';
 
 
 function App() {
@@ -8,33 +14,13 @@ function App() {
 
   return (
     <>
-  <header className="flex items-end flex-col gap-[3.5rem]">
-<div className='flex gap-[2rem]'>
-<button>Dark Mode</button>
-<p>|</p>
-<button>Türkçeye geç</button>
-
-</div>
-
-<div className='flex gap-[2rem]'>
-  <button>Skill</button>
-  <button>Skill</button>
-  <button>Skill</button>
-
-</div>
-
-
-
-  </header>
-
-
-
-
+  
+<Header/>
 <IntroductionComp/>
+<Skills/>
+<ProfileSection/>
 
-
-
-
+<ProjectsSection/>
 
 
 
