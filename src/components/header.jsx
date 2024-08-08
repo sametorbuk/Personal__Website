@@ -1,15 +1,20 @@
 import { useContext } from "react";
 import ToggleButton from "./introduction-comp/toggle-btn";
 import { ThemeContext } from "../contexts/ThemeContext";
+import { useDispatch, useSelector } from "react-redux";
+import { setLanguage } from "../Store/actions";
 
 
 
 
 
 export default function Header(){
-
-  const {isDarkMode}=useContext(ThemeContext)
-
+  const current = useSelector((state)=> state.currentLanguage)
+const {isDarkMode}=useContext(ThemeContext)
+const dispatch = useDispatch();
+ const  onLanguageChangeHandler = ()=>{
+    dispatch(setLanguage())
+  }
 
     return(<>
     
@@ -18,7 +23,7 @@ export default function Header(){
   <ToggleButton/>
 <button>{`${isDarkMode ? "Light Mode " :"Dark Mode" }`}</button>
 <p>|</p>
-<button >Türkçeye geç</button>
+<button onClick={onLanguageChangeHandler}>{current === "tr" ? "İngilizceye geç" : "Switch to Turkish"}</button>
 
 </div>
 
