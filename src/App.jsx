@@ -8,6 +8,7 @@ import IntroductionComp from './components/introduction-comp/introduction-comp';
 import Skills from './components/skills/Skills.comp';
 import ProjectsSection from './components/Projects-Section/Projects';
 import Footer from './components/footer';
+import ThemeContextProvider from './contexts/ThemeContext';
 
 
 function App() {
@@ -15,16 +16,20 @@ function App() {
 
   return (
     <>
-  
+  <ThemeContextProvider>
+
+
+
 <Header/>
 <IntroductionComp/>
 <Skills/>
 <ProfileSection/>
-
 <ProjectsSection/>
-
 <Footer/>
 
+
+
+</ThemeContextProvider>
     </>
   )
 }
