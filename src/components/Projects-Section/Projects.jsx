@@ -1,10 +1,38 @@
+import { useEffect } from "react";
 import ProjectChart from "./project-chart";
+import { initialData } from "../../data/data";
+import useAxios from "../../hooks/useAxios";
 
 
 
 
 
 export default function ProjectsSection (){
+
+    const {data , MakeRequest , METHODS }=useAxios({initialData});
+
+    useEffect(()=>{
+    
+    MakeRequest({
+        method:METHODS.POST,
+        data: initialData
+    })
+    
+    console.log(data)
+    
+    },[])
+    
+    
+    const projectsData = data[2]
+    console.log(projectsData)
+
+
+
+
+
+
+
+
     return(<>
     
     
@@ -15,9 +43,9 @@ export default function ProjectsSection (){
      
      <section className="flex justify-around gap-[1.7rem]">
 
-      <ProjectChart/>
-      <ProjectChart/>
-      <ProjectChart/>
+      {projectsData.map((item , index)=> {
+        return <ProjectChart key={index}  item={item}/>
+      })}
       
 
 

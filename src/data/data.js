@@ -6,7 +6,7 @@ export const introCompData = {username: "SAMET",
     pathToLinkedin:"https://www.linkedin.com/in/sametorbuk/"
 }
 
-
+ 
 
 export const skillsData = [{
         skillName:"Java Script",
@@ -39,7 +39,7 @@ export const profileData = {
 
 export const projectsData = [{
 projectName: "Dashboard",
-img:"./src/images/wit-control-img-png",
+img:"./src/images/wit-control-img.png",
 explanation:"It is a simple to use interface created especially for administrators and facilitates product management. It was created using React and various libraries. "
 
 
@@ -47,7 +47,7 @@ explanation:"It is a simple to use interface created especially for administrato
 },{
 
 projectName:"Product Hunt",
-img:"./src/images/prodcut-hunt-website.png",
+img:"./src/images/product-hunt-website.png",
 explanation:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
 
 },{

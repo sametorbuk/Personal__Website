@@ -1,8 +1,35 @@
+import { useEffect } from "react";
+import { initialData } from "../data/data";
+import useAxios from "../hooks/useAxios";
 
 
 
 
 export default function ProfileSection(){
+
+   const {data , MakeRequest , METHODS }=useAxios({initialData});
+
+   useEffect(()=>{
+   
+   MakeRequest({
+       method:METHODS.POST,
+       data: initialData
+   })
+   
+   console.log(data)
+   
+   },[])
+   
+   
+   const personalData = data[1]
+   console.log(personalData)
+
+  const { PreferRole , aboutUser,  birthDate, city,  education} = personalData
+  
+
+
+
+
     return(<>
     
     <div className="flex flex-col gap-[2.5rem] pb-[1.6rem] pt-[1.6rem] border-b-2 border-gray-300">
@@ -21,22 +48,22 @@ export default function ProfileSection(){
 
       <div className="flex gap-[3rem]">
      <p className="font-bold">Doğum Tarihi</p>
-     <p>09.07.2000</p>
+     <p>{birthDate}</p>
 
       </div>
       <div className="flex gap-[3rem]">
            <p className="font-bold" >İkamet Şehri</p>
-           <p>Mersin</p>
+           <p>{city}</p>
 
       </div>
       <div className="flex gap-[3rem]">
         <p className="font-bold" >Eğitim Durumu</p>
-        <p>Dokuz Eylül üni , Sınıf Öğretmenliği , Lisans</p>
+        <p>{education}</p>
 
       </div>
       <div className="flex gap-[3rem]">
       <p className="font-bold" >Tercih ettiği rol</p>
-      <p>Full stack developer</p>
+      <p>{PreferRole}</p>
 
       </div>
 
@@ -51,7 +78,7 @@ export default function ProfileSection(){
 
 <p className="text-2xl font-bold text-indigo-800 "  >About me</p>
 
-<p className="text-[gray]">A curious and hardworking software developer who wants to keep up with the ever-advancing technology</p>
+<p className="text-[gray]">{aboutUser}</p>
 
 
 
