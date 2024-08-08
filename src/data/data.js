@@ -40,7 +40,7 @@ export const profileData = {
 export const projectsData = [{
 projectName: "Dashboard",
 img:"./src/images/wit-control-img.png",
-explanation:"It is a simple to use interface created especially for administrators and facilitates product management. It was created using React and various libraries. "
+explanation:"It is a simple to use interface created especially for administrators and facilitates product management. It was created using React and various libraries.It is a simple to use interface created especially for administrators and facilitates product management. It was created using React and various libraries. "
 
 
 

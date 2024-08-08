@@ -15,7 +15,7 @@ const {projectName , img , explanation}= item
     
     <div className="flex flex-col">
 
-            <img className="w-[17rem]" src={img} alt="" />
+            <img className="w-[17rem] h-[152px]" src={img} alt="" />
 
 
 
