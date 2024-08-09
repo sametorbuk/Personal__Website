@@ -35,7 +35,7 @@ const {projectName , img , explanation}= item
 
  
 <div className="flex mt-[2rem]">
-<a className="font-bold text-indigo-700" href="https://github.com/sametorbuk?tab=repositories" 
+<a className={` ${isDarkMode ? "text-white" : " text-indigo-700"} font-bold `} href="https://github.com/sametorbuk?tab=repositories" 
 target="_blank" rel="noopener noreferrer">Github</a>
 </div>
 

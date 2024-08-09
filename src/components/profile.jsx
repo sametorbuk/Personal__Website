@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { initialData } from "../data/data";
 import useAxios from "../hooks/useAxios";
 
 import { useChangeLanguages } from "../hooks/useChangeLanguages";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 
 
@@ -11,6 +12,7 @@ export default function ProfileSection(){
 
    const {data , MakeRequest , METHODS }=useAxios({initialData});
    const [datas]=useChangeLanguages();
+   const {isDarkMode}=useContext(ThemeContext)
 
    useEffect(()=>{
    
@@ -38,7 +40,7 @@ export default function ProfileSection(){
     
     <div className="flex flex-col gap-[2.5rem] pb-[1.6rem] pt-[1.6rem] border-b-2 border-gray-300">
    
-    <h1 className="text-5xl font-bold">{personalData.title}</h1>
+    <h1 className={`text-5xl font-bold  ${isDarkMode ? "text-white" : "text-indigo-800"}`}>{personalData.title}</h1>
    
   
   
@@ -46,7 +48,7 @@ export default function ProfileSection(){
   
    <div className="flex flex-col gap-[1.5rem]">
 
-      <p className="text-2xl font-bold text-indigo-800"  >{personalData.title}</p>
+      <p className={`text-2xl font-bold  ${isDarkMode ? "text-white" : "text-indigo-800"} `} >{personalData.title}</p>
 
 
 
@@ -82,7 +84,7 @@ export default function ProfileSection(){
 
 <p className="text-2xl font-bold text-indigo-800 "  >{about}</p>
 
-<p className="text-[gray]">{aboutUser}</p>
+<p className={`${isDarkMode ? "text-white" : "text-[gray]"} `}>{aboutUser}</p>
 
 
 
