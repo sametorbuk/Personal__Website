@@ -1,4 +1,8 @@
-export const introCompData = {username: "SAMET",
+export const introCompData = {
+    btn1:"Beceriler",
+    btn2:"Projeler",
+    btn3:"İşe Alım",
+    username: "Samet Orbuk",
     title:"Yaratıcı Düşünür Minimalizmi Sever",
     explanation:"Merhaba, ben Samet. Full stack developer olarak çalışmaktayım. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir ön uç ürünleri oluşturacak bir geliştirici arıyorsanız. Hadi beraber çalışalım.",
     img:"./src/images/user-img.jpg",

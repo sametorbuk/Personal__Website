@@ -44,7 +44,7 @@ const {username , title , explanation , img , pathToGithub , pathToLinkedin} = i
 
 <div className="flex flex-col gap-[2rem] max-w-[35rem]">
 
-<h2>{username}</h2>
+<h2 className='text-indigo-700'>{username}</h2>
 
 <p className={`${isDarkMode ? "text-white" : ""} text-6xl font-bold`} >{title}</p>
 

@@ -46,11 +46,30 @@ export default function Footer (){
 
 
 
+
+
+<div className="flex items-center">
+
 <div className="flex gap-[2rem] items-center ">
     <p className="text-2xl">👉</p>
 <p className="text-rose-700"> sametorbukk@gmail.com</p>
 </div>
 
+
+<div className=" absolute flex justify-between gap-[2rem] left-[50rem] ">
+
+<a className="font-bold" href="">Personal Blog</a>
+<a className="text-emerald-400 font-bold" target="_blank" href="https://github.com/sametorbuk?tab=repositories">Github</a>
+<a className="text-sky-600 font-bold" target="_blank" href="https://www.linkedin.com/in/sametorbuk/">Linkedin</a>
+   </div>
+   
+
+
+
+</div>
+
+
+
 </div>
 
 
@@ -59,13 +78,6 @@ export default function Footer (){
 
    </div>
    
-   
-   <div className="absolute flex justify-between gap-[2rem] right-[9rem] top-[132rem] ">
-
-<a className="font-bold" href="">Personal Blog</a>
-<a className="text-emerald-400 font-bold" target="_blank" href="https://github.com/sametorbuk?tab=repositories">Github</a>
-<a className="text-sky-600 font-bold" target="_blank" href="https://www.linkedin.com/in/sametorbuk/">Linkedin</a>
-   </div>
    
    
    
