@@ -6,7 +6,7 @@ export const introCompData = {
     username: "Samet Orbuk",
     title:"Creative Thinker Minimalizm Lover",
     explanation:"Hi, I’m Samet. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
-    img:"./src/images/user-img.jpg",
+    img:"./images/user-img.jpg",
     pathToGithub:"https://github.com/sametorbuk?tab=repositories",
     pathToLinkedin:"https://www.linkedin.com/in/sametorbuk/"
 }
@@ -55,7 +55,7 @@ export const profileData = {
 export const projectsData = [{
 title:"Projects",
 projectName: "Dashboard",
-img:"./src/images/wit-control-img.png",
+img:"./images/wit-control-img.png",
 explanation:"It is a simple to use interface created especially for administrators and facilitates product management. It was created using React and various libraries.It is a simple to use interface created especially for administrators and facilitates product management. It was created using React and various libraries. "
 
 
@@ -63,13 +63,13 @@ explanation:"It is a simple to use interface created especially for administrato
 },{
     title:"Projects",
 projectName:"Product Hunt",
-img:"./src/images/product-hunt-website.png",
+img:"./images/product-hunt-website.png",
 explanation:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
 
 },{
     title:"Projects",
  projectName:"Journey",
- img:"./src/images/journey-app.jpg" ,
+ img:"./images/journey-app.jpg" ,
  explanation:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
     
 
