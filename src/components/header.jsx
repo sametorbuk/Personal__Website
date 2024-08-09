@@ -52,13 +52,13 @@ const dispatch = useDispatch();
 </div>
 
 <div className='flex gap-[2rem]'>
-  <button className="btn" >{introductionCompData.btn1}</button>
-  <button className="btn"  >{introductionCompData.btn2}</button>
-  <button className="btn"  >{introductionCompData.btn3}</button>
+  <button className={`${isDarkMode ? "btnDark" : "btn"}`} >{introductionCompData.btn1}</button>
+  <button className={`${isDarkMode ? "btnDark" : "btn"}`} >{introductionCompData.btn2}</button>
+  <button className={`${isDarkMode ? "btnDark" : "btn"}`} >{introductionCompData.btn3}</button>
 
 </div>
 
-
+ 
 
   </header> 
     </>)
