@@ -82,7 +82,7 @@ export default function ProfileSection(){
 <div className="flex flex-col">
 
 
-<p className="text-2xl font-bold text-indigo-800 "  >{about}</p>
+<p className={`text-2xl font-bold   ${isDarkMode ? "text-white" : "text-indigo-800 "} `} >{about}</p>
 
 <p className={`${isDarkMode ? "text-white" : "text-[gray]"} `}>{aboutUser}</p>
 
