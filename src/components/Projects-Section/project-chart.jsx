@@ -19,7 +19,7 @@ const {projectName , img , explanation}= item
 
 
 
-            <p className={`${isDarkMode ? "text-white" : ""}  text-2xl font-bold text-indigo-800 mt-[1.5rem]`}  >{projectName}</p>
+            <p className={`${isDarkMode ? "text-white" : "text-indigo-800"}  text-2xl font-bold  mt-[1.5rem]`}  >{projectName}</p>
 
 
            <p className="text-[gray]">{explanation}</p>

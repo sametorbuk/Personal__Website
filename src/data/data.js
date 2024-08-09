@@ -5,7 +5,7 @@ export const introCompData = {
     username: "Samet Orbuk",
     title:"Yaratıcı Düşünür Minimalizmi Sever",
     explanation:"Merhaba, ben Samet. Full stack developer olarak çalışmaktayım. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir ön uç ürünleri oluşturacak bir geliştirici arıyorsanız. Hadi beraber çalışalım.",
-    img:"./src/images/user-img.jpg",
+    img:"./images/user-img.jpg",
     pathToGithub:"https://github.com/sametorbuk?tab=repositories",
     pathToLinkedin:"https://www.linkedin.com/in/sametorbuk/"
 }
@@ -52,7 +52,7 @@ export const profileData = {
 export const projectsData = [{
 title:"Projeler",
 projectName: "Dashboard",
-img:"./src/images/wit-control-img.png",
+img:"./images/wit-control-img.png",
 explanation:"Özellikle yöneticiler için oluşturulmuş kullanımı basit ve ürün yönetimini kolaylaştıran bir arayüzdür. React ve çeşitli kütüphaneler kullanılarak oluşturulmuştur. Özellikle yöneticiler için oluşturulmuş kullanımı basit ve ürün yönetimini kolaylaştıran bir arayüzdür."
 
 
@@ -60,13 +60,13 @@ explanation:"Özellikle yöneticiler için oluşturulmuş kullanımı basit ve �
 },{
 title:"Projeler",
 projectName:"Product Hunt",
-img:"./src/images/product-hunt-website.png",
+img:"./images/product-hunt-website.png",
 explanation:"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulum çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve bir NPM paketi olarak mevcut ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılıyor."
 
 },{
 title:"Projeler",
  projectName:"Journey",
- img:"./src/images/journey-app.jpg" ,
+ img:"./images/journey-app.jpg" ,
  explanation:"Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulum çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve bir NPM paketi olarak mevcut ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılıyor."
     
 
