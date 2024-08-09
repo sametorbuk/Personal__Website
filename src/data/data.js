@@ -32,7 +32,7 @@ export const profileData = {
      row2:"İkamet Şehri:",
      row3:"Eğitim Durumu",
      row4:"Tercih Ettiği Rol",
-     
+     footer:"Hadi yeni projende beraber çalışalım.",
     about: "Hakkımda",
     title:"Profil",
     birthDate : "09.07.2000",

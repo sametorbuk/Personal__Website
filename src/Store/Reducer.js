@@ -1,8 +1,9 @@
 import { SET_LANGUAGE } from "./action-types"
 
 const initialState = {
-    currentLanguage: "tr"
+    currentLanguage:  JSON.parse(localStorage.getItem("Prefered Language"))
 }
+
 
 export const Reducer =(state = initialState , action)=>{
 

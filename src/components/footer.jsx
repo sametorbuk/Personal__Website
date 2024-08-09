@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import { initialData } from "../data/data";
+import useAxios from "../hooks/useAxios";
+import { useChangeLanguages } from "../hooks/useChangeLanguages";
 
 
 
@@ -5,6 +9,32 @@
 
 
 export default function Footer (){
+
+
+    const {data , MakeRequest , METHODS }=useAxios({initialData});
+    const [datas]=useChangeLanguages();
+ 
+    useEffect(()=>{
+    
+    MakeRequest({
+        method:METHODS.POST,
+        data: datas
+    })
+ 
+    
+    },[datas])
+    
+    
+    const personalData = data[1]
+    console.log(personalData)
+
+
+
+
+
+
+
+
     return(<>
    
    
@@ -12,7 +42,7 @@ export default function Footer (){
 
 <div className="flex flex-col gap-[4rem]" >
 
-<h1 className="text-4xl font-bold"> Lets work together on your new product</h1>
+<h1 className="text-4xl font-bold">{personalData.footer}</h1>
 
 
 

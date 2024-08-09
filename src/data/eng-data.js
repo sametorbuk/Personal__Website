@@ -34,7 +34,7 @@ export const profileData = {
      row2:"City:",
      row3:"Education",
      row4:"Prefer Role",
-     
+     footer:"Lets work together on your new product",
       about:"About me",
     title: "Profile",
     birthDate : "09.07.2000",

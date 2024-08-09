@@ -10,6 +10,9 @@ import { dataEng } from "../data/eng-data"
 export const useChangeLanguages = () => {
     const [datas, setDatas] = useState(initialData);
     const currentState = useSelector(state => state.currentLanguage);
+
+    localStorage.setItem("Prefered Language" , JSON.stringify(currentState))
+
   
     useEffect(() => {
       const currentData = currentState === 'tr' ? initialData : dataEng;
