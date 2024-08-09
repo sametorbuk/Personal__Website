@@ -53,7 +53,7 @@ export const projectsData = [{
 title:"Projeler",
 projectName: "Dashboard",
 img:"./src/images/wit-control-img.png",
-explanation:"Özellikle yöneticiler için oluşturulmuş kullanımı basit ve ürün yönetimini kolaylaştıran bir arayüzdür. React ve çeşitli kütüphaneler kullanılarak oluşturulmuştur. Özellikle yöneticiler için oluşturulmuş kullanımı basit ve ürün yönetimini kolaylaştıran bir arayüzdür. React ve çeşitli kütüphaneler kullanılarak oluşturulmuştur. "
+explanation:"Özellikle yöneticiler için oluşturulmuş kullanımı basit ve ürün yönetimini kolaylaştıran bir arayüzdür. React ve çeşitli kütüphaneler kullanılarak oluşturulmuştur. Özellikle yöneticiler için oluşturulmuş kullanımı basit ve ürün yönetimini kolaylaştıran bir arayüzdür."
 
 
 
