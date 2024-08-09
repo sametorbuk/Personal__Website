@@ -84,7 +84,7 @@ export default function ProfileSection(){
 
 <p className={`text-2xl font-bold   ${isDarkMode ? "text-white" : "text-indigo-800 "} `} >{about}</p>
 
-<p className={`${isDarkMode ? "text-white" : "text-[gray]"} `}>{aboutUser}</p>
+<p className={`${isDarkMode ? "text-white" : "text-[gray]"} mt-[2rem]`}>{aboutUser}</p>
 
 
 
