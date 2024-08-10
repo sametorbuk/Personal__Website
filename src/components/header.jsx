@@ -32,11 +32,14 @@ export default function Header() {
   return (
     <>
       <header className="flex flex-col gap-[3.5rem] md:flex-col md:items-end md:gap-[2rem]">
-        <div className="flex gap-[2rem] md:flex-row">
-          <ToggleButton />
-          <button className="md:block">
-            {`${isDarkMode ? "Light Mode" : "Dark Mode"}`}
-          </button>
+        <div className="flex  flex-col items-center md:gap-[2rem]  md:flex-row">
+          <div className="flex md:flex gap-[0.5rem]">
+            <ToggleButton />
+            <button className="md:block">
+              {`${isDarkMode ? "Light Mode" : "Dark Mode"}`}
+            </button>
+          </div>
+
           <p className="md:block">|</p>
           <button onClick={onLanguageChangeHandler}>
             {current === "tr" ? "İngilizceye geç" : "Switch to Turkish"}

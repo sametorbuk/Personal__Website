@@ -24,10 +24,10 @@ export default function Skills() {
 
   return (
     <>
-      <div className="flex flex-col gap-[2.5rem] pb-[1.6rem] pt-[1.6rem] border-b-2 border-gray-300">
+      <div className="flex flex-col  md:flex-col  gap-[2.5rem] pb-[1.6rem] pt-[1.6rem] border-b-2 border-gray-300">
         <h1 className="text-5xl font-bold">{skillData[0].title}</h1>
 
-        <div className="flex justify-between">
+        <div className=" flex flex-col   md:flex md:flex-row justify-between ">
           {skillData.map((item, index) => {
             return (
               <>

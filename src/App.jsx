@@ -24,9 +24,9 @@ function Content() {
 
   return (
     <div
-      className={`flex flex-col ${
+      className={`flex flex-col md:flex md:flex-col ${
         isDarkMode ? "bg-slate-700 text-white" : ""
-      }  px-[0rem] py-[3rem]     md:px-[8rem] md:py-[3rem]`}
+      }   py-[3rem]     md:px-[8rem] md:py-[3rem]`}
     >
       <Header />
       <IntroductionComp />

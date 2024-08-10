@@ -44,7 +44,7 @@ export default function ProfileSection() {
           {personalData.title}
         </h1>
 
-        <div className="flex">
+        <div className="flex flex-col   md:flex">
           <div className="flex flex-col gap-[1.5rem]">
             <p
               className={`text-2xl font-bold  ${
@@ -72,7 +72,7 @@ export default function ProfileSection() {
             </div>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-[2rem]  md:flex-col">
             <p
               className={`text-2xl font-bold   ${
                 isDarkMode ? "text-white" : "text-indigo-800 "

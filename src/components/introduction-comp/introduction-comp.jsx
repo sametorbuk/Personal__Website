@@ -30,7 +30,7 @@ export default function IntroductionComp() {
 
   return (
     <>
-      <section className="flex flex-col items-center md:flex-row md:items-center md:gap-[2rem] my-8">
+      <section className="flex flex-col w-[17rem] md:w-[75rem] items-center md:flex-row md:items-center md:gap-[2rem] my-8">
         <div className="flex flex-col gap-[2rem] max-w-[35rem]">
           <h2
             className={`${
@@ -53,7 +53,7 @@ export default function IntroductionComp() {
           >
             {explanation}
           </p>
-          <div className="flex flex-col md:flex-row gap-[0.8rem] md:gap-[1rem] justify-center md:justify-start">
+          <div className="flex flex-col items-center md:flex-row gap-[0.8rem] md:gap-[1rem] justify-center md:justify-start">
             <button
               className={`hidden   ${
                 isDarkMode ? "btnDark" : "btn"
@@ -78,7 +78,7 @@ export default function IntroductionComp() {
           </div>
         </div>
         <img
-          className="w-[10rem] h:[10rem]  md:w-[25rem] md:h-[17rem] rounded-md mx-auto md:mx-0"
+          className="w-[10rem] h:[10rem] mt-[2rem]  md:w-[25rem] md:h-[17rem] rounded-md mx-auto md:mx-0"
           src={img}
           alt="Profile"
         />
