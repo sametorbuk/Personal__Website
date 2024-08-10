@@ -14,7 +14,7 @@ export default function Header() {
   useEffect(() => {
     MakeRequest({
       method: METHODS.POST,
-      data: datas
+      data: datas,
     });
 
     console.log(data);
@@ -24,7 +24,7 @@ export default function Header() {
   const current = useSelector((state) => state.currentLanguage);
   const { isDarkMode } = useContext(ThemeContext);
   const dispatch = useDispatch();
-  
+
   const onLanguageChangeHandler = () => {
     dispatch(setLanguage());
   };
