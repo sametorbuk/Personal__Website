@@ -43,7 +43,7 @@ export default function Header() {
           </button>
         </div>
 
-        <div className="flex flex-col gap-[2rem] md:flex-row md:gap-[2rem]">
+        <div className="hidden   md:flex  gap-[2rem] md:flex-row md:gap-[2rem]">
           <button className={`${isDarkMode ? "btnDark" : "btn"} md:text-lg`}>
             {introductionCompData.btn1}
           </button>

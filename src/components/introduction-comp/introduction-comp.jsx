@@ -30,7 +30,7 @@ export default function IntroductionComp() {
 
   return (
     <>
-      <section className="flex flex-col md:flex-row md:items-center md:gap-[2rem] my-8">
+      <section className="flex flex-col items-center md:flex-row md:items-center md:gap-[2rem] my-8">
         <div className="flex flex-col gap-[2rem] max-w-[35rem]">
           <h2
             className={`${
@@ -42,7 +42,7 @@ export default function IntroductionComp() {
           <p
             className={`${
               isDarkMode ? "text-white" : ""
-            } text-4xl md:text-6xl font-bold text-center md:text-left`}
+            } text-xl md:text-6xl font-bold text-center md:text-left`}
           >
             {title}
           </p>
@@ -54,7 +54,11 @@ export default function IntroductionComp() {
             {explanation}
           </p>
           <div className="flex flex-col md:flex-row gap-[0.8rem] md:gap-[1rem] justify-center md:justify-start">
-            <button className={`${isDarkMode ? "btnDark" : "btn"} md:text-lg`}>
+            <button
+              className={`hidden   ${
+                isDarkMode ? "btnDark" : "btn"
+              } md:text-lg`}
+            >
               Hire me
             </button>
             <a target="_blank" rel="noopener noreferrer" href={pathToGithub}>
@@ -74,7 +78,7 @@ export default function IntroductionComp() {
           </div>
         </div>
         <img
-          className="w-[25rem] h-[17rem] rounded-md mx-auto md:mx-0"
+          className="w-[10rem] h:[10rem]  md:w-[25rem] md:h-[17rem] rounded-md mx-auto md:mx-0"
           src={img}
           alt="Profile"
         />

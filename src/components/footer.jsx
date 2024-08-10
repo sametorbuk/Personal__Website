@@ -19,17 +19,19 @@ export default function Footer() {
 
   return (
     <>
-      <div className="flex items-end w-[23rem] mt-[5rem]">
+      <div className="flex flex-col  md:flex items-end w-[23rem] mt-[5rem]">
         <div className="flex flex-col gap-[4rem]">
-          <h1 className="text-4xl font-bold">{personalData.footer}</h1>
+          <h1 className="text-2xl   md:text-4xl font-bold">
+            {personalData.footer}
+          </h1>
 
-          <div className="flex items-center">
+          <div className=" flex flex-col md:flex items-center">
             <div className="flex gap-[2rem] items-center ">
               <p className="text-2xl">👉</p>
               <p className="text-rose-700"> sametorbukk@gmail.com</p>
             </div>
 
-            <div className=" absolute flex justify-between gap-[2rem] left-[50rem] ">
+            <div className=" md:absolute flex justify-between gap-[2rem] left-[50rem] ">
               <a className="font-bold" href="">
                 Personal Blog
               </a>

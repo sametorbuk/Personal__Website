@@ -23,10 +23,10 @@ export default function ProjectsSection() {
 
   return (
     <>
-      <div className="flex flex-col gap-[2.5rem] pb-[1.6rem] pt-[1.6rem] border-b-2 border-gray-300">
+      <div className="flex flex-col md:flex md:flex-col gap-[2.5rem] pb-[1.6rem] pt-[1.6rem] border-b-2 border-gray-300">
         <h1 className="text-5xl font-bold">{projectsData[0].title}</h1>
 
-        <section className="flex justify-around gap-[1.7rem]">
+        <section className="   md:flex justify-around gap-[1.7rem]">
           {projectsData.map((item, index) => {
             return <ProjectChart key={index} item={item} />;
           })}

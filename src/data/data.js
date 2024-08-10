@@ -44,7 +44,7 @@ export const profileData = {
   education: "Dokuz Eylül Üni. Sınıf Öğretmenliği/Lisans",
   PreferRole: "Full stack developer",
   aboutUser:
-    "Sürekli gelişen teknolojiye ayak uydurmak isteyen meraklı ve çalışkan bir yazılım geliştirici",
+    "Sürekli gelişmekte olan teknolojiye ayak uydurmak isteyen meraklı ve çalışkan bir yazılım geliştirici.",
 };
 
 export const projectsData = [
