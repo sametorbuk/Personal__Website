@@ -75,3 +75,4 @@ export const projectsData = [
 ];
 
 export const dataEng = [skillsData, profileData, projectsData, introCompData];
+ 
